@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dataset-XML: Untyped Data Example  --> 
+<!-- Built from the SAS XPT files published with the SDTM-MSG (SDTM Metadata Submission Guidelines) V1 --> 
+<!-- Prepared by Marcelina Hungria / DIcore Group, LLC --> 
+<ODM
+  xmlns="http://www.cdisc.org/ns/odm/v1.3"
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:data="http://www.cdisc.org/ns/Dataset-XML/v1.0"
+  FileType="Snapshot"
+  ODMVersion="1.3.2"
+  data:DatasetXMLVersion="1.0.0"
+  FileOID="www.cdisc.org.Studycdisc01-Define-XML_2.0.0(IG.TE)"
+  PriorFileOID="www.cdisc.org.Studycdisc01-Define-XML_2.0.0"
+  Originator="CDISC Dataset-XML Team"
+  CreationDateTime="2014-04-01T09:31:03">
+  <ReferenceData
+    StudyOID="cdisc01"
+    MetaDataVersionOID="MDV.CDISC01.SDTMIG.3.1.2.SDTM.1.2">
+    <!-- Dataset (TE) -->
+    <ItemGroupData ItemGroupOID="IG.TE" data:ItemGroupDataSeq="1">
+      <ItemData ItemOID="IT.STUDYID" Value="CDISC01"/>
+      <ItemData ItemOID="IT.TE.DOMAIN" Value="TE"/>
+      <ItemData ItemOID="IT.TE.ETCD" Value="EOS"/>
+      <ItemData ItemOID="IT.TE.ELEMENT" Value="End of Study"/>
+      <ItemData ItemOID="IT.TE.TESTRL" Value="Study Termination"/>
+      <ItemData ItemOID="IT.TE.TEDUR" Value="P1D"/>
+    </ItemGroupData>
+    <ItemGroupData ItemGroupOID="IG.TE" data:ItemGroupDataSeq="2">
+      <ItemData ItemOID="IT.STUDYID" Value="CDISC01"/>
+      <ItemData ItemOID="IT.TE.DOMAIN" Value="TE"/>
+      <ItemData ItemOID="IT.TE.ETCD" Value="PLACEBO"/>
+      <ItemData ItemOID="IT.TE.ELEMENT" Value="Treatment Placebo"/>
+      <ItemData ItemOID="IT.TE.TESTRL" Value="Randomized to Placebo"/>
+      <ItemData ItemOID="IT.TE.TEDUR" Value="P24W"/>
+    </ItemGroupData>
+    <ItemGroupData ItemGroupOID="IG.TE" data:ItemGroupDataSeq="3">
+      <ItemData ItemOID="IT.STUDYID" Value="CDISC01"/>
+      <ItemData ItemOID="IT.TE.DOMAIN" Value="TE"/>
+      <ItemData ItemOID="IT.TE.ETCD" Value="SCREEN"/>
+      <ItemData ItemOID="IT.TE.ELEMENT" Value="Screening"/>
+      <ItemData ItemOID="IT.TE.TESTRL" Value="Informed Consent"/>
+      <ItemData ItemOID="IT.TE.TEDUR" Value="P12W"/>
+    </ItemGroupData>
+    <ItemGroupData ItemGroupOID="IG.TE" data:ItemGroupDataSeq="4">
+      <ItemData ItemOID="IT.STUDYID" Value="CDISC01"/>
+      <ItemData ItemOID="IT.TE.DOMAIN" Value="TE"/>
+      <ItemData ItemOID="IT.TE.ETCD" Value="WOND10"/>
+      <ItemData ItemOID="IT.TE.ELEMENT" Value="Treatment 10 mg Miracle Drug"/>
+      <ItemData ItemOID="IT.TE.TESTRL" Value="Randomized to 10 mg"/>
+      <ItemData ItemOID="IT.TE.TEDUR" Value="P24W"/>
+    </ItemGroupData>
+    <ItemGroupData ItemGroupOID="IG.TE" data:ItemGroupDataSeq="5">
+      <ItemData ItemOID="IT.STUDYID" Value="CDISC01"/>
+      <ItemData ItemOID="IT.TE.DOMAIN" Value="TE"/>
+      <ItemData ItemOID="IT.TE.ETCD" Value="WOND20"/>
+      <ItemData ItemOID="IT.TE.ELEMENT" Value="Treatment 20 mg Miracle Drug"/>
+      <ItemData ItemOID="IT.TE.TESTRL" Value="Randomized to 20 mg"/>
+      <ItemData ItemOID="IT.TE.TEDUR" Value="P24W"/>
+    </ItemGroupData>
+  </ReferenceData>
+</ODM>
