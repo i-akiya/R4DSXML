@@ -28,5 +28,5 @@ install_github("DataDrivenInc/R4DSXML/R4DSXML")
  [Ippei Akiya](http://github.com/i-akiya)
 
 ## References
-* [Dataset-XML](http://www.cdisc.org/dataset-xml)
-* [Define-XML](http://www.cdisc.org/define-xml)
+* [Dataset-XML](https://www.cdisc.org/standards/foundational/dataset-xml)
+* [Define-XML](https://www.cdisc.org/standards/foundational/define-xml)
