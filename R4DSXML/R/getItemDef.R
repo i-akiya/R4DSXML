@@ -23,9 +23,7 @@ getItemDef <- function( Nodeset ){
     ID_OriginDescription <- originList[[2]]
       
     #getVal(ItemDefNode4, 'TranslatedText[@xml:lang = "en"]')
-
-    ID_ValueListOID <- getValueListRef(ItemDefNode)
-
+    
     
     df <- data.frame(
         ID_OID,
@@ -39,7 +37,6 @@ getItemDef <- function( Nodeset ){
         ID_CodeListOID,
         ID_OriginType,
         ID_OriginDescription,
-        ID_ValueListOID,
         stringsAsFactors = FALSE
         )
       
