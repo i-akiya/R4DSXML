@@ -5,6 +5,7 @@ export(read.dataset.xml,
        getVarMD,
        getValMD,
        getCT,
-       getARM
+       getARDISP,
+       getAR
        )
 
