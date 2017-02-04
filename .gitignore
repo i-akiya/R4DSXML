@@ -4,3 +4,5 @@
 .Ruserdata
 *.Rproj
 .Rbuildignore
+*.tar.gz
+*.Rcheck/*
