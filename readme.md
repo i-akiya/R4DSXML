@@ -17,7 +17,7 @@ R4DSXML is R package for import CDISC Dataset-XML and Define-XML as R data frame
 * From Github  
 Run following command in R console.  
 library(devtools)  
-install_github("DataDrivenInc/R4DSXML/R4DSXML")
+install_github("i-akiya/R4DSXML/R4DSXML")
 
 ## Dependencies
 * [R](https://cran.r-project.org/) (>= 3.0.3)

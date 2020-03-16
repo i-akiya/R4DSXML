@@ -1,6 +1,6 @@
 getVarMD <- function( filepath ) {
-    doc = xmlTreeParse( filepath, useInternalNodes = T )
-    namespaces <- c( ns='http://www.cdisc.org/ns/odm/v1.3' )
+    doc <- xmlTreeParse( filepath, useInternalNodes = T )
+    namespaces <- namespaces(doc)
     
     #ItemRef
     ItemGroupDef <- getNodeSet( doc, "//ns:ItemGroupDef", namespaces )

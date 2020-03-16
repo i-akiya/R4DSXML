@@ -1,5 +1,4 @@
-getOrigin <- function(Nodeset){
-    namespaces <- namespaces()
+getOrigin <- function(Nodeset, namespaces){
     origintypeVec <- c()
     origindescVec <- c()
     

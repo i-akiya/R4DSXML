@@ -1,7 +1,6 @@
 getValMD <- function( filepath ) {
     doc = xmlTreeParse( filepath, useInternalNodes = T )
-    namespaces <- c( ns='http://www.cdisc.org/ns/odm/v1.3', 
-                     def='http://www.cdisc.org/ns/def/v2.0' )
+    namespaces <- namespaces(doc)
     
     #ItemRef
     ValueListDefNode <- getNodeSet( doc, "//def:ValueListDef", namespaces )

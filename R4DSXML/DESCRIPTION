@@ -1,11 +1,11 @@
 Package: R4DSXML
 Type: Package
 Title: Read CDISC Data Files
-Version: 0.5.0
-Date: 2016-4-40
-Depends: R (>= 3.2.1), XML, stringr
+Version: 1.0.0-1
+Date: 2020-3-31
+Depends: R (>= 3.6.1), XML, stringr
 Author: Ippei Akiya
-Maintainer: Ippei Akiya <ippei.aki@datadriven.jp>
+Maintainer: Ippei Akiya <ippei.aki@gmail.com>
 URL: https://github.com/i-akiya/R4DSXML
 Description: CDISC Dataset-XML and Define-XML are used as file format for clinical trial data and metadata respectively. This functions supports reading both Dataset-XML and Define-XML. The Clinical Data Interchange Standards Consortium (CDISC, http://www.cdisc.org/) is a standards developing organization (SDO) to develop global standards and innovations regarding medical research and health care.
 License: LGPL-3

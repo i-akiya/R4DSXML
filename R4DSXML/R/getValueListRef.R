@@ -1,5 +1,5 @@
-getValueListRef <- function(Nodeset){
-  namespaces <- namespaces()
+getValueListRef <- function(Nodeset, ns){
+  namespaces <- ns
   clfVec <- c()
   
   for (i in 1:length(Nodeset)){

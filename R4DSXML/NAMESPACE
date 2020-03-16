@@ -1,4 +1,5 @@
-import(XML)
+import(XML, stringr)
+importFrom("utils", "tail")
 importFrom("stats", "reshape")
 export(read.dataset.xml, 
        getDLMD, 
