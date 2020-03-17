@@ -1,6 +1,6 @@
 getAR <- function( filepath ) {
     doc = xmlTreeParse( filepath, useInternalNodes = T )
-    namespaces <- namespaces()
+    namespaces <- namespaces(doc)
     
     AnalysisResultNode <- getNodeSet(doc, "//arm:AnalysisResultDisplays/arm:ResultDisplay/arm:AnalysisResult", namespaces)
     AR_OID <- getAttr( Nodeset = AnalysisResultNode,  Attr="OID")

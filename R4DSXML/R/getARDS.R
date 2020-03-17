@@ -1,6 +1,6 @@
 getARDS <- function( filepath, AnalysisResultOIDs ) {
     doc = xmlTreeParse( filepath, useInternalNodes = T )
-    namespaces <- namespaces()
+    namespaces <- namespaces(doc)
     
     dsdf <- data.frame()
     

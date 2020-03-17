@@ -1,6 +1,6 @@
 getARDISP <- function(filepath) {
   doc = xmlTreeParse(filepath, useInternalNodes = T)
-  namespaces <- namespaces()
+  namespaces <- namespaces(doc)
   
   #AnalysisResultDisplays Metadata
   AnalysisResultDisplays <-

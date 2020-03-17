@@ -2,7 +2,7 @@ getCTasDataFrame <- function( filepath ) {
     CT <- getCT(filepath)
     
     doc = xmlTreeParse( filepath, useInternalNodes = T )
-    namespaces <- namespaces()
+    namespaces <- namespaces(doc)
     
     #Code List
     clNode <- getNodeSet( doc, "//ns:CodeList", namespaces )

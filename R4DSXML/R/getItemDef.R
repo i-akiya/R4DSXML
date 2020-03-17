@@ -16,14 +16,14 @@ getItemDef <- function(doc) {
   if (defVersion == "v2.1") {
     ID_DisplayFormat <-
       getAttr(Nodeset = ItemDefNode, Attr = "def:DisplayFormat")
-  } else if (defVersion == "v2.0") {
+  } else {
     ID_SASFormatName <-
-      getAttr(Nodeset = ItemDefNode, Attr = "SASFormatName")
+      getAttr(Nodeset = ItemDefNode, Attr = "ns:SASFormatName")
   }
   ItemDefNode2 <-
     getNodeSet(doc, "//ns:ItemDef/ns:Description", namespaces)
   ID_Label <-
-    getVal(ItemDefNode2, 'TranslatedText[@xml:lang = "en"]')
+    getVal(ItemDefNode2, 'ns:TranslatedText[@xml:lang = "en"]')
   
   ID_CodeListOID <- getCodeListRef(ItemDefNode, namespaces)
   
