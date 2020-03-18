@@ -25,34 +25,33 @@ ct.metadata <- getCT(define)
 # Check number of records
 test_that("Check number of records", {
     expect_equal(nrow(dataset.metadata), 11)
-    expect_equal(nrow(dataset.metadata), 11)
-  
-  
-#    expect_equal(nrow(variable.metadata[variable.metadata$IGD_Name == "LB",]), 28)
-#    expect_equal(nrow(value.metadata[value.metadata$ValueListOID == "VL.QS.QSORRES",]), 28)
+    expect_equal(nrow(variable.metadata), 155)
+    expect_equal(nrow(value.metadata), 44)
+    expect_equal(nrow(ct.metadata), 162)
 })
 
 # Check number of colums
 test_that("Check number of colums", {
     expect_equal(ncol(dataset.metadata), 12)
-    expect_equal(ncol(variable.metadata), 15)
-    expect_equal(ncol(value.metadata), 14)
+    expect_equal(ncol(variable.metadata), 16)
+    expect_equal(ncol(value.metadata), 15)
+    expect_equal(ncol(ct.metadata), 13)
 })
 
 # Check character value 
 test_that("chech an imported value", {
-    expect_equal(dataset.metadata[3,"IGD_Name"], "TI")
-    expect_equal(dataset.metadata[8,"IGD_Structure"], "One record per actual visit per subject")
-    expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.EG.EGDTC","ID_DataType"], "date" )
-    expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.DS.DSCAT","IR_Mandatory"], "No")
-    expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.SC.SCORRES.MARISTAT","ID_DataType"], "text")
-    expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.VS.VSORRESU.WEIGHT.DM.COUNTRY.CMETRIC","ID_SASFieldName"], "WEIGHTU")
+    expect_equal(dataset.metadata[3,"IGD_Name"], "DM")
+    expect_equal(dataset.metadata[8,"IGD_Structure"], "One record per finding per visit per subject")
+    expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.VS.VSDTC","ID_DataType"], "date" )
+    expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.LB.LBCAT","IR_Mandatory"], "No")
+    expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.TS.TSVAL.AGEMIN","ID_DataType"], "integer")
+    expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.VS.VSORRESU.WEIGHT.DM.COUNTRY.CMETRIC","ID_SASFieldName"], "WEIGHTOM")
 })
 
 # Check integer value 
 test_that("chech an imported value", {
-  expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.SE.SESEQ","IR_OrderNumber"], 4 )
-  expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.EG.EGORRES.QRSDUR","IR_OrderNumber"], 3)
+  expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.TS.TSSEQ","IR_OrderNumber"], 3 )
+  expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.LB.LBORRES.VITB9.LBSPEC.BLOOD","ID_SignificantDigits"], 1)
 })
 
 

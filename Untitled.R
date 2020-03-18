@@ -15,10 +15,10 @@ define2.1 <- system.file("extdata",
                       "defineV21-SDTM.xml", 
                       package="R4DSXML") 
 #Get dataset level metadata
-dataset.metadata <- getDLMD(definedefine2.1)
-variable.metadata <- getVarMD(definedefine2.1)
-value.metadata <- getValMD(definedefine2.1)
-ct.metadata <- getCT(definedefine2.1)
+dataset.metadata <- getDLMD(define2.1)
+variable.metadata <- getVarMD(define2.1)
+value.metadata <- getValMD(define2.1)
+ct.metadata <- getCT(define2.1)
 
 
 doc = xmlTreeParse( define, useInternalNodes = T )
