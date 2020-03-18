@@ -38,6 +38,14 @@ test_that("Check number of colums", {
     expect_equal(ncol(ct.metadata), 13)
 })
 
+# Check specific colum
+test_that("Check exist of specific colums", {
+  expect_false( "ID_SASFormatName" %in% names(variable.metadata) )
+  expect_true( "ID_DisplayFormat" %in% names(variable.metadata) )
+
+
+})
+
 # Check character value 
 test_that("chech an imported value", {
     expect_equal(dataset.metadata[3,"IGD_Name"], "DM")
@@ -46,6 +54,7 @@ test_that("chech an imported value", {
     expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.LB.LBCAT","IR_Mandatory"], "No")
     expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.TS.TSVAL.AGEMIN","ID_DataType"], "integer")
     expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.VS.VSORRESU.WEIGHT.DM.COUNTRY.CMETRIC","ID_SASFieldName"], "WEIGHTOM")
+    
 })
 
 # Check integer value 

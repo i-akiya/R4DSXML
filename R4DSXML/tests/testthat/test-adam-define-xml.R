@@ -36,6 +36,14 @@ test_that("Check number of colums", {
     expect_equal(ncol(value.metadata), 15)
 })
 
+# Check specific colum
+test_that("Check exist of specific colums", {
+    expect_true( "ID_SASFormatName" %in% names(variable.metadata) )
+    expect_false( "ID_DisplayFormat" %in% names(variable.metadata) )
+    
+    
+})
+
 # Check character value 
 test_that("check imported values", {
     expect_equal(dataset.metadata[1,"IGD_Name"], "ADSL")
