@@ -8,9 +8,9 @@ getItemDef <- function(doc) {
   ID_Name <- getAttr(Nodeset = ItemDefNode, Attr = "Name")
   
   ID_DataType <- getAttr(Nodeset = ItemDefNode, Attr = "DataType")
-  ID_Length <- getAttr(Nodeset = ItemDefNode, Attr = "Length")
+  ID_Length <- as.integer(getAttr(Nodeset = ItemDefNode, Attr = "Length"))
   ID_SignificantDigits <-
-    getAttr(Nodeset = ItemDefNode, Attr = "SignificantDigits")
+    as.integer(getAttr(Nodeset = ItemDefNode, Attr = "SignificantDigits"))
   ID_SASFieldName <-
     getAttr(Nodeset = ItemDefNode, Attr = "SASFieldName")
   if (defVersion == "v2.1") {
