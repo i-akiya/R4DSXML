@@ -3,7 +3,7 @@
 R4DSXML is R package for import CDISC Dataset-XML and Define-XML as R data frame.
 
 ## Features
-* Support CDISC Dataset-XML 1.0, Define-XML 2.0 and Analysis Results Metadata 1.0.
+* Support CDISC Dataset-XML 1.0, Define-XML 2.0,  :new: Define-XML 2.1 and Analysis Results Metadata 1.0.
 * Covert from Dataset-XML to R dataframe.
 * Extract following metadata from Define-XML as R dataframe.
   * Dataset level metadata
@@ -14,13 +14,17 @@ R4DSXML is R package for import CDISC Dataset-XML and Define-XML as R data frame
 
 
 ## Installation
-* From Github  
+* From Github with devtools <br>
 Run following command in R console.  
+```R
 library(devtools)  
 install_github("i-akiya/R4DSXML/R4DSXML")
+```
+* From package archive file <br>
+It is able to obtain source package from [Release Page](https://github.com/i-akiya/R4DSXML/releases).
 
 ## Dependencies
-* [R](https://cran.r-project.org/) (>= 3.0.3)
+* [R](https://cran.r-project.org/) (>= 3.6.0)
 * [R package XML](https://cran.r-project.org/web/packages/XML/index.html)
 * [R package stringr](https://cran.r-project.org/web/packages/stringr/index.html)
 
