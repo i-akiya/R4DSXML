@@ -24,7 +24,6 @@ getDLMD <- function(filepath) {
         else if(namespaces[["def"]] == "http://www.cdisc.org/ns/def/v2.1"){
             defClass <- getNodeSet(doc, "//ns:ItemGroupDef/def:Class", namespaces)
             IGD_Class <- getAttr(Nodeset = defClass, Attr = "Name")
-            print(IGD_Class)
         }
         IGD_ArchiveLocationID <-
             getAttr(Nodeset = ItemGroupDef, Attr = "ArchiveLocationID")
