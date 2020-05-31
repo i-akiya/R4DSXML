@@ -47,6 +47,7 @@ test_that("Check exist of specific colums", {
 test_that("chech an imported value", {
     expect_equal(dataset.metadata[3,"IGD_Name"], "DM")
     expect_equal(dataset.metadata[8,"IGD_Structure"], "One record per finding per visit per subject")
+    expect_equal(dataset.metadata[dataset.metadata$IGD_OID=="IG.TS","IGD_Class"], "TRIAL DESIGN")
     expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.VS.VSDTC","ID_DataType"], "date" )
     expect_equal(variable.metadata[variable.metadata$IR_ItemOID=="IT.LB.LBCAT","IR_Mandatory"], "No")
     expect_equal(value.metadata[value.metadata$IR_ItemOID=="IT.TS.TSVAL.AGEMIN","ID_DataType"], "integer")
@@ -71,5 +72,14 @@ test_that("check the controlled terminology", {
 })
 
 
+# Check code list value 
+test_that("check the dataset class", {
+  expect_equal(nrow(ct.metadata[ct.metadata$OID=="CL.EXTRT", ]), 2 )
+  expect_equal(ct.metadata[ct.metadata$CodedValue=="Clinical Study Sponsor", "ItemCode"], "C70793")
+  expect_equal(ct.metadata[ct.metadata$CodedValue=="BLACK OR AFRICAN AMERICAN", "OrderNumber"], "3")
+  expect_equal(ct.metadata[ct.metadata$CodedValue=="MEDIUM", "Rank"], "2")
+  expect_equal(ct.metadata[ct.metadata$CodedValue=="UNDIFFERENTIATED", "Decode"], "Undifferentiated")
+})
+"TRIAL DESIGN"
 
 

@@ -22,10 +22,9 @@ getDLMD <- function(filepath) {
         }
         # for Define-XML v2.1
         else if(namespaces[["def"]] == "http://www.cdisc.org/ns/def/v2.1"){
-            IGD_Class <-
-                sapply(getNodeSet(doc, "//ns:ItemGroupDef", namespaces), function(el)
-                    xmlValue(el, 'ns:Class')
-                    )
+            defClass <- getNodeSet(doc, "//ns:ItemGroupDef/def:Class", namespaces)
+            IGD_Class <- getAttr(Nodeset = defClass, Attr = "Name")
+            print(IGD_Class)
         }
         IGD_ArchiveLocationID <-
             getAttr(Nodeset = ItemGroupDef, Attr = "ArchiveLocationID")
