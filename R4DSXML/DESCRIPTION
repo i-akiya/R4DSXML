@@ -1,8 +1,8 @@
 Package: R4DSXML
 Type: Package
 Title: Read CDISC Data Files
-Version: 0.6.0
-Date: 2020-3-30
+Version: 0.6.1
+Date: 2020-5-31
 Depends: R (>= 3.6.0), XML, stringr
 Author: Ippei Akiya
 Maintainer: Ippei Akiya <ippei.aki@gmail.com>
