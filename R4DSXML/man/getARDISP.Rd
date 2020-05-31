@@ -19,10 +19,8 @@ Ippei Akiya
 }
 \examples{
 ## Not run: 
-define <- system.file("extdata", "ARM",
-                      "define2-0-0-example-adam-results.xml", 
-                      package="R4DSXML"
-                      ) 
+define <- paste0("/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/",
+                "ARM/define2-0-0-example-adam-results.xml")
 AR_Displays <- getARDISP(define)
 
 }

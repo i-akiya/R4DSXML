@@ -3,10 +3,7 @@ library(testthat)
 
 
 ## Test metadata preparation
-define <- system.file("extdata",
-                      "ARM",
-                      "define2-0-0-example-adam-results.xml",
-                      package = "R4DSXML")
+define <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/ARM/define2-0-0-example-adam-results.xml"
 
 #Get analysis displays metadata
 analysis.displays.metadata <- getARDISP(define)

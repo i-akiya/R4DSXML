@@ -20,10 +20,8 @@ Ippei Akiya
 }
 \examples{
 ## Not run: 
-define <- system.file("extdata", "ADaM",
-                      "define2-0-0-example-adam.xml", 
-                       package="R4DSXML"
-                       ) 
+define <- paste0("/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/",
+                "ADaM/define2-0-0-example-adam.xml")
 CT <- getCT(define)
 
 }
