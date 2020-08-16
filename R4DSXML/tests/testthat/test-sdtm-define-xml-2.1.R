@@ -3,7 +3,7 @@ library(testthat)
 
 
 ## Test metadata preparation 
-define <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/define-xml-2.1/defineV21-SDTM.xml"
+define <- "/Users/ippei/develop/data/cdisc/DefineV21ReleasePackage/DefineV21/examples/DefineXML-2-1-SDTM/defineV21-SDTM.xml"
 
 #Get dataset level metadata
 dataset.metadata <- getDLMD(define)

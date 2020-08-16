@@ -3,7 +3,7 @@ library(testthat)
 
 
 ## Test metadata preparation 
-define <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/ADaM/define2-0-0-example-adam.xml"
+define <- "/Users/ippei/develop/data/cdisc/define_xml_2_0_releasepackage20140424/adam/define2-0-0-example-adam.xml"
 
 #Get dataset level metadata
 dataset.metadata <- getDLMD(define)

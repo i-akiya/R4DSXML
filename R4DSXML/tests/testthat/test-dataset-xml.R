@@ -4,25 +4,26 @@ library(testthat)
 
 
 ## Test data preparation 
-define <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/SDTM/define2-0-0-example-sdtm(2013-11-09).xml"
+basedir <- "/Users/ippei/develop/data/cdisc/Dataset-XML_1-0/Example/Untyped_Data_Example-sdtm"
+define <- paste0(basedir, "/define2-0-0-example-sdtm(2013-11-09).xml")
 
 # Read DM file
-sds_dm <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/SDTM/dm.xml"
+sds_dm <- paste0(basedir, "/dm.xml")
 DM <- read.dataset.xml(dataset_xml=sds_dm, define_xml=define)
 
 
 # Read AE file
-sds_ae <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/SDTM/ae.xml"
+sds_ae <- paste0(basedir, "/ae.xml")
 AE <- read.dataset.xml(dataset_xml=sds_ae, define_xml=define)
 
 
 # Read LB file
-sds_lb <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/SDTM/lb.xml"
+sds_lb <- paste0(basedir, "/lb.xml")
 LB <- read.dataset.xml(dataset_xml=sds_lb, define_xml=define)
 
 
 # Read TV file
-sds_tv <- "/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/SDTM/tv.xml" 
+sds_tv <- paste0(basedir, "/tv.xml") 
 TV <- read.dataset.xml(dataset_xml=sds_tv, define_xml=define)
 
 
