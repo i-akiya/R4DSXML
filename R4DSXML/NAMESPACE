@@ -2,6 +2,7 @@ import(XML, stringr)
 importFrom("utils", "tail")
 importFrom("stats", "reshape")
 export(read.dataset.xml, 
+       getStudyMD,
        getDLMD, 
        getVarMD,
        getValMD,

@@ -5,6 +5,9 @@ library(testthat)
 ## Test metadata preparation 
 define <- "/Users/ippei/develop/data/cdisc/define_xml_2_0_releasepackage20140424/sdtm/define2-0-0-example-sdtm.xml"
 
+#Get study metadata
+study.maetadata <- getStudyMD(define)
+
 #Get dataset level metadata
 dataset.metadata <- getDLMD(define)
 
@@ -18,6 +21,11 @@ value.metadata <- getValMD(define)
 ct.metadata <- getCT(define)
 
 # Excute unit tests for import metadata
+# Check Study Metadata
+test_that("Check Study Metadata", {
+  expect_equal(unname(study.maetadata["StudyName"]), "CDISC01")
+  expect_equal(unname(study.maetadata["StandardVersion"]), "3.1.2")
+})
 
 # Check number of records
 test_that("Check number of records", {
