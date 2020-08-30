@@ -22,12 +22,17 @@ getCTasDataFrame <- function( filepath ) {
         } else {
           cl.aname <- cll$Alias[["Name"]]
         }
+        if ( cll$Alias[["Context"]] == "nci:ExtCodeID" ) {
+          cl.aname <- cll$Alias[["Name"]]
+          cl.acontext <- cll$Alias["Context"]
+        }
         # Context
         if (is.null(cll$Alias[["Context"]]) == TRUE){
           cl.acontext <- NA
         } else {
           cl.acontext <- cll$Alias["Context"]
         }
+        
         cl.items <- list(cl.oid, 
                          cl.name, 
                          cl.datatype, 

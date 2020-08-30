@@ -42,7 +42,7 @@ getEnumeratedItem <- function(doc, ns) {
         
         CodeListAlias <- getNodeSet(
             doc,
-            str_c("//ns:CodeList[@OID=\"",  OID, "\"]", "/ns:Alias", sep = ""),
+            str_c("//ns:CodeList[@OID=\"",  OID, "\"]", "/ns:Alias[@Context=\"nci:ExtCodeID\"]", sep = ""),
             namespaces
         )
         
@@ -88,7 +88,7 @@ getEnumeratedItem <- function(doc, ns) {
                     "\"]/ns:EnumeratedItem[",
                     as.character(j) ,
                     "]",
-                    "/ns:Alias",
+                    "/ns:Alias[@Context=\"nci:ExtCodeID\"]",
                     sep = ""
                 ),
                 namespaces
@@ -98,7 +98,7 @@ getEnumeratedItem <- function(doc, ns) {
                 EnumeratedItemCode <- append(EnumeratedItemCode, NA)
                 EnumeratedItemContext <-
                     append(EnumeratedItemContext, NA)
-            } else{
+            } else {
                 EnumeratedItemCode <-
                     append(EnumeratedItemCode,
                            getAttr(Nodeset = enumAlias, Attr = "Name"))
