@@ -24,6 +24,10 @@ ct.metadata <- getCT(define)
 # Check Study Metadata
 test_that("Check Study Metadata", {
   expect_equal(unname(study.maetadata["StudyName"]), "CDISC01")
+  expect_equal(unname(study.maetadata["StudyDescription"]), "CDISC Test Study")
+  expect_equal(unname(study.maetadata["ProtocolName"]), "CDISC01")
+  expect_equal(unname(study.maetadata["DefineVersion"]), "2.0.0")
+  expect_equal(unname(study.maetadata["StandardName"]), "SDTM-IG")
   expect_equal(unname(study.maetadata["StandardVersion"]), "3.1.2")
 })
 
