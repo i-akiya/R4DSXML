@@ -19,7 +19,7 @@ Ippei Akiya
 }
 \examples{
 ## Not run: 
-define <- paste0("/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/",
-                "SDTM/define2-0-0-example-sdtm(2013-11-09).xml")
+define <- paste0("/path/to/data/directory/",
+                "define.xml")
 ValMD <- getValMD(define)
 }

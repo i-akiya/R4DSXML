@@ -38,10 +38,10 @@ Ippei Akiya
 }
 \examples{
 ## Not run: 
-define <- paste0("/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/",
-                "SDTM/define2-0-0-example-sdtm(2013-11-09).xml")
-sds <- paste0("/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/",
-                "SDTM/dm.xml")
+define <- paste0("/path/to/data/directory/",
+                "define.xml")
+sds <- paste0("/path/to/data/directory/",
+                "dm.xml")
 
 DM <- read.dataset.xml(dataset_xml=sds, define_xml=define)
 }

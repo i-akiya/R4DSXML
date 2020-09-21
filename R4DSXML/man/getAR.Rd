@@ -19,7 +19,7 @@ Ippei Akiya
 }
 \examples{
 ## Not run: 
-define <- paste0("/Volumes/Transcend/develop/Rwork/VerifiyR4DSXML/TestData/",
-                "ARM/define2-0-0-example-adam-results.xml")
+define <- paste0("/path/to/data/directory/",
+                "define_with_ARM.xml")
 AR <- getAR(define)
 }
