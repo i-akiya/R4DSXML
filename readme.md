@@ -36,7 +36,7 @@ It is able to obtain source package from [Release Page](https://github.com/i-aki
 
 ## Contributor
  [Masafumi Okada](https://github.com/mokjpn), He expanded the feature to support getting def:ValueListRef value as metadata.
-  [Jean-Michel Bodart](https://github.com/jmbo1190), He found a bug that is not able to get whole variable metadata and value level metadata from define.xml in case of description element is not found.
+ [Jean-Michel Bodart](https://github.com/jmbo1190), He found a bug that is not able to get whole variable metadata and value level metadata from define.xml in case of description element is not found.
 
 
 ## References
